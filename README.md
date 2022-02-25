@@ -2,18 +2,20 @@
 
 Unofficial python client for the PhotoPrism API
 
+## Install
+
 ```python
-pip install photoprism
+pip install git+https://github.com/PyGithub/PyGithub.git
 ```
+
+## Usage
 
 ```python
 from photoprism import Client
 
-# default_domain = 'https://demo.photoprism.org'
-# default_root = '/api/v1'
+client = Client(username=None, password=None, domain='https://demo.photoprism.org', root='/api/v1')
 
-client = Client(username=None, password=None, domain=default_domain, root=default_root)
-client.create_album('Test')
+# client...
 ```
 
 ```python
@@ -83,3 +85,5 @@ def update_photo(self, photo_uid, **params):
 
     pass
 ```
+
+Official PhotoPrism API doc: https://pkg.go.dev/github.com/photoprism/photoprism/internal/api
