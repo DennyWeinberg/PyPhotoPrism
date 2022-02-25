@@ -1,19 +1,22 @@
-# photoprism
+# PyPhotoPrism
 
 Unofficial python client for the PhotoPrism API
 
-```
+```python
 pip install photoprism
 ```
 
-```
+```python
 from photoprism import Client
 
-client = Client()
-client....
+# default_domain = 'https://demo.photoprism.org'
+# default_root = '/api/v1'
+
+client = Client(username=None, password=None, domain=default_domain, root=default_root)
+client.create_album('Test')
 ```
 
-```
+```python
 def get_albums(self, count=INFINITE, **params):
     """
     Search an album
