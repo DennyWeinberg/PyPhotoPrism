@@ -5,7 +5,7 @@ Unofficial python client for the PhotoPrism API
 ## Install
 
 ```python
-pip install git+https://github.com/PyGithub/PyGithub.git
+pip install git+https://github.com/PyPhotoPrism/PyPhotoPrism.git
 ```
 
 ## Usage
